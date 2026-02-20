@@ -4,8 +4,8 @@ class Solution {
         long sum = 0;
         int MOD = 1_000_000_007;
         
-        int[] left = new int[n];
-        int[] right = new int[n];
+        int[] left = new int[n]; // previous smaller
+        int[] right = new int[n]; // next smaller
         Deque<Integer> st = new ArrayDeque<>();
 
         for (int i = 0; i < n; i++) {
